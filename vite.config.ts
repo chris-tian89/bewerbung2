@@ -1,14 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-//import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  //base: '/bewerbung/',
-  //resolve: {
-  //  alias: {
-  //    '@': resolve(__dirname, 'src')
-  //  }
-  //}
+  base: '/bewerbung2/', // GitHub Pages repository name
+  server: {
+    port: 3000,
+    open: true
+  }
 });
